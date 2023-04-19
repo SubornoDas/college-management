@@ -1,0 +1,73 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<title>About Us | College Management System</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f5f5f5;
+		}
+		header {
+			background-color: #2d2d2d;
+			color: #ffffff;
+			padding: 20px;
+			text-align: center;
+		}
+		h1 {
+			margin: 0;
+			font-size: 40px;
+			font-weight: bold;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+		}
+		main {
+			padding: 20px;
+			max-width: 800px;
+			margin: 0 auto;
+		}
+		p {
+			line-height: 1.5;
+			font-size: 18px;
+			margin-bottom: 20px;
+		}
+		h2 {
+			font-size: 28px;
+			font-weight: bold;
+			margin-top: 40px;
+			margin-bottom: 20px;
+		}
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>About Us</h1>
+	</header>
+	<main>
+		<p>Our college management system is designed to provide a seamless experience for students, faculty, and administrators. With our system, you can easily manage all aspects of college life, from admissions to graduation.</p>
+		<h2>Our Team</h2>
+		<p>We are a team of experienced developers and designers who are passionate about creating innovative software solutions for educational institutions. Our team includes:</p>
+		<ul>
+			<li>John Doe - Lead Developer</li>
+			<li>Jane Smith - UI/UX Designer</li>
+			<li>Mark Johnson - Backend Developer</li>
+			<li>Sara Lee - Frontend Developer</li>
+		</ul>
+		<h2>Our Mission</h2>
+		<p>Our mission is to make college management easy and efficient for everyone involved. We believe that technology can help streamline processes and improve communication, making college life better for students, faculty, and staff.</p>
+		<h2>Contact Us</h2>
+		<p>If you have any questions or comments about our college management system, please don't hesitate to contact us.</p>
+		<ul>
+			<li>Email: info@collegemanagementsystem.com</li>
+			<li>Phone: (123) 456-7890</li>
+			<li>Address: 123 Main Street, Anytown USA</li>
+		</ul>
+		<img src="team-photo.jpg" alt="Our team photo">
+	</main>
+</body>
+</html> -->

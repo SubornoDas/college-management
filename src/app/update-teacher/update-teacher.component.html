@@ -1,0 +1,97 @@
+<h3 class="text-center">Update Teacher</h3>
+<p class="text-center">* represents mandatory</p>
+<form [formGroup]="form"  (ngSubmit)="onSubmit()">
+
+    <div class="container">
+        <div for="firstName" class="form-group">
+            <label>First Name*:</label>
+            <input formControlName="firstName" type="text" class="form-control" id="fname" name="firstName"
+            [(ngModel)]="teacher.firstName">
+
+        </div>
+        <div *ngIf="f['firstName'].touched && f['firstName'].invalid" class="alert alert-danger">
+            <div *ngIf="f['firstName'].errors && f['firstName'].errors['required']">
+                *First Name is mandatory*
+            </div>
+            
+            <div *ngIf="f['firstName'].errors && f['firstName'].errors['minlength']">
+                Minimum length must be 3 characters**
+             </div>
+        </div>
+        <div for="lastName" class="form-group">
+            <label>Last Name*:</label>
+            <input formControlName="lastName" type="text" class="form-control" id="lname" name="lastName"
+            [(ngModel)]="teacher.lastName">
+        </div>
+        <div *ngIf="f['lastName'].touched && f['lastName'].invalid" class="alert alert-danger">
+            <div *ngIf="f['lastName'].errors && f['lastName'].errors['required']">
+                *Last Name is mandatory*
+            </div>
+            <div *ngIf="f['lastName'].errors && f['lastName'].errors['minlength']">
+                Minimum length must be 3 characters**
+             </div>
+        </div>
+
+        <div for="contact"class="form-group">
+            <label>Contact*:</label>
+            <input formControlName="contact" type="text" class="form-control" id="contact" name="contact"
+            [(ngModel)]="teacher.contact">
+        </div>
+        <div *ngIf="f['contact'].touched && f['contact'].invalid" class="alert alert-danger">
+            <div *ngIf="f['contact'].errors && f['contact'].errors['required']">
+                *Contact is mandatory*
+            </div>
+            <div *ngIf="f['contact'].errors && f['contact'].errors['minlength']">
+                Contact  must be of 10 characters only**
+             </div>
+             <div *ngIf="f['contact'].errors && f['contact'].errors['maxlength']">
+                Contact  must be of 10 digits only**
+             </div>
+        </div>
+
+        <div for="email" class="form-group">
+            <label>Email*:</label>
+            <input formControlName="email" type="text" class="form-control" id="email" name="email"
+            [(ngModel)]="teacher.email">
+        </div>
+        <div *ngIf="f['email'].touched && f['email'].invalid" class="alert alert-danger">
+            <div *ngIf="f['email'].errors && f['email'].errors['required']">
+                *Email is mandatory*
+            </div>
+            
+        </div> 
+
+        <div for="userName"class="form-group">
+            <label>User Name*:</label>
+            <input formControlName="userName" type="text" class="form-control" id="username" name="userName"
+            [(ngModel)]="teacher.userName">
+        </div>
+        <div *ngIf="f['userName'].touched && f['userName'].invalid" class="alert alert-danger">
+            <div *ngIf="f['userName'].errors && f['userName'].errors['required']">
+                *userName is mandatory*
+            </div>
+            <div *ngIf="f['userName'].errors && f['userName'].errors['minlength']">
+                User Name must be 3 characters **
+             </div>
+          
+             </div>
+
+        <div for ="password"class="form-group">
+            <label>Password*:</label>
+            <input formControlName="password" type="password" class="form-control" id="password" name="password"
+            [(ngModel)]="teacher.password">
+        </div>
+        <div *ngIf="f['password'].touched && f['password'].invalid" class="alert alert-danger">
+            <div *ngIf="f['password'].errors && f['password'].errors['required']">
+                *Password is mandatory*
+            </div>
+            <div *ngIf="f['password'].errors && f['password'].errors['minlength']">
+                Password must be 6 characters **
+             </div>   
+          
+             </div>
+        <br>
+        <button class="btn btn-success" type="submit" >Submit</button>
+    </div>
+
+</form>

@@ -1,0 +1,60 @@
+<h3 class="text-center">Create Course</h3>
+<p class="text-center">* represents mandatory</p>
+<form [formGroup]="form"  (ngSubmit)="onSubmit()">
+    <div class="container">
+
+        <div for="subId" class="form-group">
+            <label>Subject Id*:</label>
+            <input formControlName="subId" type="text" class="form-control" id="subId" name="subId"
+            [(ngModel)]="course.subId">
+
+        </div>
+        <div *ngIf="f['subId'].touched && f['subId'].invalid" class="alert alert-danger">
+            <div *ngIf="f['subId'].errors && f['subId'].errors['required']">
+                *Subject Id is mandatory*
+            </div>
+            
+            <div *ngIf="f['subId'].errors && f['subId'].errors['minlength']">
+                Minimum length must be 1 characters**
+             </div>
+        </div>
+        <div for="subName" class="form-group">
+            <label>Subject Name*:</label>
+            <input formControlName="subName" type="text" class="form-control" id="subname" name="subname"
+            [(ngModel)]="course.subName">
+
+        </div>
+        <div *ngIf="f['subName'].touched && f['subName'].invalid" class="alert alert-danger">
+            <div *ngIf="f['subName'].errors && f['subName'].errors['required']">
+                *Subject Name is mandatory*
+            </div>
+            
+            <div *ngIf="f['subName'].errors && f['subName'].errors['minlength']">
+                Minimum length must be 3 characters**
+             </div>
+        </div>
+
+        <div for="price" class="form-group">
+            <label>Price *:</label>
+            <input formControlName="price" type="text" class="form-control" id="price" name="price"
+            [(ngModel)]="course.price">
+
+        </div>
+        <div *ngIf="f['price'].touched && f['price'].invalid" class="alert alert-danger">
+            <div *ngIf="f['price'].errors && f['price'].errors['required']">
+                *Price is mandatory*
+            </div>
+            
+            <div *ngIf="f['price'].errors && f['price'].errors['minlength']">
+                Minimum length must be 3 characters**
+             </div>
+        </div>
+
+
+
+    
+    <br>
+    <button class="btn btn-success" type="submit" >Submit</button>
+</div>
+
+</form>

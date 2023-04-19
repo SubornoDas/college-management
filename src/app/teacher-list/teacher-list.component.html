@@ -1,0 +1,32 @@
+<h2 class="text-center">Teacher List</h2>
+<table class="table table-striped">
+    <thead>
+
+        <tr>
+            <th>Teacher Id</th>
+            <th>FirstName</th>
+            <th>LastName</th>
+            <th>Email</th>
+            <th>Contact</th>
+            <th>UserName</th>
+            <th>Password</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let teacher of teachers">
+            <td>{{teacher.id}}</td>
+            <td>{{teacher.firstName}}</td>
+            <td>{{teacher.lastName}}</td>
+            <td>{{teacher.email}}</td>
+            <td>{{teacher.contact}}</td>
+            <td>{{teacher.userName}}</td>
+            <td>{{teacher.password}}</td>
+            <td>
+                <button class="btn btn-info" (click)="updateTeacher(teacher.id)">Edit</button>
+                
+            </td>
+            <td><button class="btn btn-danger" (click)="deleteTeacher(teacher.id)">Delete</button></td>
+        </tr>
+    </tbody>
+</table>

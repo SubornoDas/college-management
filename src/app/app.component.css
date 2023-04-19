@@ -1,0 +1,51 @@
+.navbar-expand{
+    background-color:orange;
+
+}
+a{
+    font-size: xx-large;
+}
+h4{
+    color: white;
+   
+}
+a{
+    color:rgb(254, 254, 254);
+    font-size: large;
+    font-weight: 500;
+    
+}
+a:active{
+    color:rgb(246, 0, 0);
+}
+h4{
+    font-size: xx-large;
+    font-weight: bold;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 5px;
+}
+footer {
+
+    position: absolute;
+    background-color:rgb(255, 248, 116);
+    
+    
+    bottom: 0;
+    
+    width: 100%;
+    
+    }
+    h5{
+        background-color: rgb(255, 94, 0);
+    }
+   
+    body {
+        background-color: blue;
+        background-image: url('/images/shutterstock_348710576.jpg');
+        
+        background-size: contain;
+        opacity: 50%;
+      }
+      
+   

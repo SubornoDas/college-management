@@ -1,0 +1,27 @@
+h1{
+   background-color: beige;
+    color: rgb(0, 0, 0);
+}
+html,
+
+body {
+
+height: 1%;
+
+position: relative;
+
+}
+
+
+app-root {
+
+min-height: 1%;
+
+display: block;
+
+position: relative;
+
+padding-bottom: 56px; 
+
+}
+
